@@ -25,8 +25,7 @@ def get_random_backdrop():
     return "./backdrop/"+random.choice(os.listdir("./backdrop"))
 
 
-def main(output="", backdrop="", text=""):
-    print(backdrop)
+def generate_img(output="", backdrop="", text=""):
     img = Image.open(backdrop)
     W, H = img.size
     draw = ImageDraw.Draw(img)
@@ -37,18 +36,21 @@ def main(output="", backdrop="", text=""):
     img.save(output)
 
 
-if __name__ == '__main__':
+def main():
     args = parser.parse_args()
-    print(args)
     if args.output:
         output = args.output
     if args.backdrop:
-        backdrop=args.backdrop
+        backdrop = args.backdrop
     else:
-        backdrop=get_random_backdrop()
+        backdrop = get_random_backdrop()
     if args.text:
-        text=args.text
+        text = args.text
     else:
-        text=get_random_text()
+        text = get_random_text()
 
-    main(output=output, backdrop=backdrop, text=text)
+    generate_img(output=output, backdrop=backdrop, text=text)
+
+
+if __name__ == '__main__':
+    main()
