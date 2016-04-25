@@ -2,7 +2,11 @@ Archur
 ======
   
 Generates random arch wallpapers from a text file!  
-Based on [this reddit thread](https://www.reddit.com/r/archlinux/comments/4gc2lw/some_arch_wallpapers_i_made/)
+Based on [this reddit
+thread](https://www.reddit.com/r/archlinux/comments/4gc2lw/some_arch_wallpapers_i_made/)
+ 
+  
+Depends on pillow
 
 ```
 λ » ./archur.py -h
