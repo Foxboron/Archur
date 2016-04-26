@@ -1,23 +1,22 @@
-a little effort followed by profound laziness
-if it ain't broke, break it
-Q: How do you know someone is running Arch? A: They will tell you.
+a little effort followed by\nprofound laziness
+Q: How do you know someone is running Arch?\nA: They will tell you.
 keep rollin' rollin' rollin'
-where 30 minutes old packages are considered stable
+where 30 minutes old\npackages are considered\nstable
 the choice of a GNU generation
 Haskall++
 if it ain't broke, break it
 Arch is the best!\n
-no wombats where harmed during development
+no wombats where harmed\nduring development
 because rebooting is for adding new hardware
 install once, use forever
 the least worst linux distribution
 have you pacman -Syu today
-if it ain't broke, it ain't much fun either
+if it ain't broke,\nit ain't much fun either
 --force now, think later!
 welcome /home
 read the f***ing wiki
 no bugs, just tons of features
-without Arch in your life you cannot boot your wife!
+without Arch in your life\nyou cannot boot your wife!
 if you can read this, xorg is still working
 better pacman than unpacwoman
 pacman -S arch-is-the-best
