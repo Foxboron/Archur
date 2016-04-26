@@ -10,7 +10,7 @@ import argparse
 import os
 
 
-# Arguments
+DEFAULT_DIR="/usr/share/archur"
 
 themes = {"solarized": {"text": (147,161,161),
                         "background": (0, 43, 54)},
@@ -18,7 +18,7 @@ themes = {"solarized": {"text": (147,161,161),
                     "background": (0,0,0)}}
 
 def get_random_text():
-    lines = open('./text.txt').read().splitlines()
+    lines = open(DEFAULT_DIR+'/text.txt').read().splitlines()
     return random.choice(lines)
 
 
@@ -45,7 +45,7 @@ def generate_img(output="", theme={}, text="", resolution=(1920,1080)):
     img = Image.new("RGB", resolution, theme["background"])
     W, H = img.size
 
-    logo = Image.open("./assets/logo.png")
+    logo = Image.open(DEFAULT_DIR+"/assets/logo.png")
     colorized_img = ImageOps.colorize(logo.convert("L"), theme["text"], theme["background"])
     size = int((W/100)*17)
     logo_newsize = colorized_img.resize((size, size), Image.ANTIALIAS)

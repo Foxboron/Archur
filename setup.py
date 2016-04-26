@@ -15,6 +15,10 @@ setup(
             'archur = archur:main',
         ]
     },
+    data_files=[
+        ('/usr/share/archur', ['text.txt', 'assets/logo.png']),
+        ('/usr/share/archur/assets', ['assets/logo.png']),
+    ],
     url="https://github.com/Foxboron/Archur",
     platforms=['any'],
     classifiers=[
