@@ -17,7 +17,7 @@ welcome /home
 read the f***ing wiki
 no bugs, just tons of features
 without Arch in your life\nyou cannot boot your wife!
-if you can read this, xorg is still working
+if you can read this,\nxorg is still working
 better pacman than unpacwoman
 pacman -S arch-is-the-best
 99% evil, 1% tacos

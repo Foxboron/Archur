@@ -53,7 +53,8 @@ def generate_img(output="", theme={}, text="", resolution=(1920,1080)):
 
     draw = ImageDraw.Draw(img)
 
-    base_font_pixle = int((76/1920)*resolution[0])
+    base_font_pixle = int((56/1920)*resolution[0])
+    print(base_font_pixle)
     font = ImageFont.truetype("DejaVuSansMono.ttf", base_font_pixle)
     w, h = font.getsize(text)
 
