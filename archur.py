@@ -27,7 +27,6 @@ def get_random_theme():
     return themes[key]
 
 
-
 def text_draw(draw, text, pixel, ress, theme):
     text = text.split("\\n")
     W, H = ress
@@ -79,7 +78,7 @@ def main():
         args["theme"] = themes[args["theme"]]
 
     if isinstance(args["resolution"], str):
-        x,y = args.resolution.split("x")
+        x,y = args["resolution"].split("x")
         args["resolution"] = (int(x),int(y))
 
     if args.get("foreground_color"):
