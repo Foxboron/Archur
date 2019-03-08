@@ -18,6 +18,12 @@ themes = {"solarized": {"text": (147,161,161),
           "black": {"text": (255,255,255),
                         "logo": (255, 255, 255),
                         "background": (0,0,0)},
+          "standart": {"text": (77,77,77),
+                        "logo": (23, 147, 209),
+                        "background": (255,255,255)},
+          "inverted": {"text": (255,255,255),
+                        "logo": (23, 147, 209),
+                        "background": (51,51,51)}}
 
 def get_random_text():
     lines = open(DEFAULT_DIR+'/text.txt').read().splitlines()
@@ -67,7 +73,8 @@ def generate_img(output="", theme={}, text="", resolution=(1920,1080), text_scal
 def main():
     parser = argparse.ArgumentParser(description='Generate random Arch wallpaper')
     parser.add_argument('-o','--output', help='Output file name', required=True)
-    parser.add_argument('-t','--theme', default=get_random_theme(), help='The theme to use, else random. \'black\' or \'solarized\'', required=False)
+    parser.add_argument('-t','--theme', default=get_random_theme(),
+            help='The theme to use, else random. \'black\', \'solarized\', \'standart\' or \'inverted\'', required=False)
     parser.add_argument('--text', default=get_random_text(), help='Text on the picture, or random', required=False)
     parser.add_argument('-r', '--resolution', default=(1920,1080), help='Sets the resolution of the image. Example: 1920x1080', required=False)
     parser.add_argument('-ts', '--text-scale', default=(1.0), help='Sets scale for the text. Example: 1.75', required=False)
